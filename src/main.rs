@@ -43,9 +43,10 @@ fn main() {
     let hot = Temperature {
         degrees_f : 99.9
     };
-    let cold = Temperature::freezing();
-    let boil = Temperature::boiling();
     hot.show_temp();
+    let cold = Temperature::freezing();
     cold.show_temp();
-    boil.show_temp();
+
+    let boiling = Temperature::boiling();
+    boiling.show_temp();
 }
